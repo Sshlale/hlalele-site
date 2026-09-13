@@ -1,6 +1,7 @@
-touch sandbox-ritual.html
-python3 -m http.server 8080
-git add sandbox-ritual.html
-git commit -m "Add HlaleleDAO Sandbox Ritual Board"
+mkdir -p public
+mv sandbox-ritual.html public/
+git add public/sandbox-ritual.html
+git commit -m "Embed HlaleleDAO Sandbox Ritual Board"
 git push origin sandbox-test
+
 
