@@ -1,9 +1,29 @@
-public/dns-ritual.html
-public/ui-ritual.html
-public/deployment-ritual.html
-git add public/*.html
-git commit -m "Add multiple ritual boards"
-git push origin sandbox-test
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HlaleleDAO Deployment Ritual Board</title>
+  <style>
+    body { font-family: 'Segoe UI', sans-serif; background:#2E1A47; color:#FDFEFE; }
+    h2 { margin:20px; color:#F1C40F; }
+    .column { background:#1C0F2E; border:1px solid #F1C40F; border-radius:6px; padding:10px; min-height:300px; }
+    .task { background:#FDFEFE; color:#2E1A47; margin:5px; padding:8px; border-radius:4px; cursor:grab; }
+  </style>
+</head>
+<body>
+  <h2>🚀 Deployment Ritual Board</h2>
+  <div class="column">
+    <div class="task">Create branch (sandbox-deploy)</div>
+    <div class="task">Push branch to GitHub</div>
+    <div class="task">Vercel auto-deploy preview URL</div>
+    <div class="task">Check build logs (no errors)</div>
+    <div class="task">Confirm environment variables set correctly</div>
+    <div class="task">Test API routes and endpoints</div>
+    <div class="task">Verify CDN routing (Vercel + Cloudflare)</div>
+    <div class="task">Log deployment timestamp and archive JSON</div>
+  </div>
+</body>
+</html>
+
 
 
 
