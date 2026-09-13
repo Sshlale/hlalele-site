@@ -3,5 +3,6 @@ mv sandbox-ritual.html public/
 git add public/sandbox-ritual.html
 git commit -m "Embed HlaleleDAO Sandbox Ritual Board"
 git push origin sandbox-test
+https://sandbox-test-hlalele.vercel.app/sandbox-ritual.html
 
 
