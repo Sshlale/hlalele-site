@@ -22,3 +22,49 @@
   },
   "archive_notes": "Each ritual entry is logged with status (pending, active, complete). When marked complete, export updates Eternal Archive testimony."
 }
+<script>
+  // Ritual Archive JSON structure
+  let ritualArchive = {
+    board: "HlaleleDAO Sandbox Ritual Board",
+    timestamp: new Date().toISOString(),
+    rituals: {
+      milestones: [
+        {id:"github_branch",status:"pending",title:"GitHub → Branch Ritual"},
+        {id:"vercel_preview",status:"pending",title:"Vercel → Preview Ritual"},
+        {id:"cloudflare_dns",status:"pending",title:"Cloudflare → DNS Ritual"},
+        {id:"dns_propagation",status:"pending",title:"DNS → Propagation Ritual"},
+        {id:"live_breakthrough",status:"pending",title:"Live → Breakthrough Ritual"}
+      ],
+      upgrade_path: [
+        {id:"cloudflare_upgrade",status:"pending",title:"Cloudflare Upgrade"},
+        {id:"gemini_upgrade",status:"pending",title:"Gemini Upgrade"},
+        {id:"google_ai_upgrade",status:"pending",title:"Google AI Studio Upgrade"}
+      ],
+      survival: [
+        {id:"cloudflare_free",status:"active",title:"Cloudflare Free Rituals"},
+        {id:"gemini_free",status:"active",title:"Gemini Free Rituals"},
+        {id:"google_ai_free",status:"active",title:"Google AI Studio Free Rituals"}
+      ]
+    }
+  };
+
+  // Function to update ritual status
+  function updateRitual(id, status) {
+    const categories = ["milestones","upgrade_path","survival"];
+    categories.forEach(cat => {
+      ritualArchive.rituals[cat].forEach(r => {
+        if(r.id === id) r.status = status;
+      });
+    });
+    ritualArchive.timestamp = new Date().toISOString();
+    console.log("Updated Archive:", ritualArchive);
+
+    // Optional: export JSON to file
+    const blob = new Blob([JSON.stringify(ritualArchive,null,2)], {type:"application/json"});
+    const link = document.createElement("a");
+    link.href = URL.createObjectURL(blob);
+    link.download = "ritual-archive.json";
+    link.click();
+  }
+</script>
+
