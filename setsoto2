@@ -17,3 +17,6 @@
   animation: pulseGlow 2s infinite;
   transition: transform 0.2s ease, box-shadow 0.3s ease;
 }
+<button onclick="exportArchive()" class="export-btn">
+  🔥📜 Export Eternal Archive
+</button>
