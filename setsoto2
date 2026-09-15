@@ -122,4 +122,7 @@
     link.click();
   }
 </script>
+<button onclick="exportArchive()" style="margin-top:20px; padding:10px; background:gold; color:indigo; border:none; border-radius:6px;">
+  📜 Export Eternal Archive
+</button>
 
