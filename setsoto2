@@ -20,3 +20,55 @@
 <button onclick="exportArchive()" class="export-btn">
   🔥📜 Export Eternal Archive
 </button>
+<script>
+  // Initialize archive in localStorage if not present
+  if(!localStorage.getItem("ritualArchive")){
+    localStorage.setItem("ritualArchive", JSON.stringify({
+      board: "HlaleleDAO Sandbox Ritual Board",
+      logs: []
+    }));
+  }
+
+  function updateRitual(id, status) {
+    let archive = JSON.parse(localStorage.getItem("ritualArchive"));
+    let entry = {
+      id: id,
+      status: status,
+      timestamp: new Date().toISOString()
+    };
+    archive.logs.push(entry);
+    localStorage.setItem("ritualArchive", JSON.stringify(archive));
+    console.log("Archive Updated:", archive);
+  }
+
+  // Export function with ceremonial log
+  function exportArchive() {
+    let archive = JSON.parse(localStorage.getItem("ritualArchive"));
+
+    // Add ceremonial invocation entry
+    archive.logs.push({
+      id: "eternal_export",
+      status: "invoked",
+      message: "🔥 Eternal Archive invoked",
+      timestamp: new Date().toISOString()
+    });
+
+    // Save back to localStorage
+    localStorage.setItem("ritualArchive", JSON.stringify(archive));
+
+    // Trigger download
+    const blob = new Blob([JSON.stringify(archive,null,2)], {type:"application/json"});
+    const link = document.createElement("a");
+    link.href = URL.createObjectURL(blob);
+    link.download = "eternal-ritual-archive.json";
+    link.click();
+
+    console.log("Eternal Archive Exported:", archive);
+  }
+</script>
+{
+  "id": "eternal_export",
+  "status": "invoked",
+  "message": "🔥 Eternal Archive invoked",
+  "timestamp": "2026-09-15T05:53:00Z"
+}
