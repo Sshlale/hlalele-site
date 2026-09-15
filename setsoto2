@@ -1,12 +1,105 @@
-<!-- Survival Ritual Panel -->
-<div class="upgrade-panel">
-  <h3>🌱 Survival Rituals (Free Tier)</h3>
-  <ul>
-    <li>🟧🔒 Cloudflare Free → Page Rules, HTTPS, Auto Minify, Bot Fight Mode</li>
-    <li>🟦📄 Gemini Free → Docs drafting, Gmail assistance, Meet summaries</li>
-    <li>🟩⚙️ Google AI Studio Free → Prompt experiments, governance scroll prototyping</li>
-  </ul>
-  <p style="color:gold; margin-top:15px;">
-    These survival rituals mark your resilience phase — documenting how HlaleleDAO runs lean under constraints.
-  </p>
-</div>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HlaleleDAO Sandbox Ritual Board</title>
+  <style>
+    body {
+      background-color: indigo;
+      color: white;
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+    h1, h2, h3 {
+      color: gold;
+    }
+    .progress-bar {
+      width: 100%;
+      background-color: #333;
+      border: 2px solid gold;
+      margin: 20px 0;
+    }
+    .progress {
+      width: 60%; /* adjust progress here */
+      height: 20px;
+      background-color: green; /* emerald */
+    }
+    .milestones {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      margin-top: 20px;
+    }
+    .milestone {
+      background-color: #222;
+      border: 2px solid gold;
+      padding: 10px;
+      border-radius: 8px;
+      text-align: center;
+      width: 30%;
+      margin: 10px;
+    }
+    .panel {
+      margin-top: 40px;
+      border: 2px solid gold;
+      padding: 20px;
+      background-color: #222;
+      border-radius: 10px;
+    }
+    .panel ul {
+      list-style: none;
+      padding: 0;
+    }
+    .panel li {
+      margin: 10px 0;
+      font-size: 1.1em;
+    }
+    .legend {
+      margin-top: 20px;
+      font-size: 0.9em;
+      color: #ccc;
+    }
+  </style>
+</head>
+<body>
+  <h1>HlaleleDAO Sandbox Ritual Board</h1>
+
+  <!-- Progress Bar -->
+  <div class="progress-bar">
+    <div class="progress"></div>
+  </div>
+
+  <!-- Milestones -->
+  <div class="milestones">
+    <div class="milestone">🟦⚔️ GitHub → Branch Ritual</div>
+    <div class="milestone">🟩🔥 Vercel → Preview Ritual</div>
+    <div class="milestone">🟧🛡️ Cloudflare → DNS Ritual</div>
+    <div class="milestone">🟨🌐 DNS → Propagation Ritual</div>
+    <div class="milestone">🟪✨ Live → Breakthrough Ritual</div>
+  </div>
+
+  <!-- Upgrade Path Panel -->
+  <div class="panel">
+    <h3>⚡ Upgrade Path Rituals</h3>
+    <ul>
+      <li>🟥⚡ Cloudflare Upgrade → Pro/Business, DNSSEC, SSL/TLS Strict, Argo Smart Routing</li>
+      <li>🟦🤖 Gemini Upgrade → Google Workspace AI unlock, Docs + Gmail integration</li>
+      <li>🟩🌐 Google AI Studio Upgrade → Paid tier, fine‑tuned models, governance scroll drafting</li>
+    </ul>
+    <div class="legend">Gold markers = future upgrades</div>
+  </div>
+
+  <!-- Survival Ritual Panel -->
+  <div class="panel">
+    <h3>🌱 Survival Rituals (Free Tier)</h3>
+    <ul>
+      <li>🟧🔒 Cloudflare Free → Page Rules, HTTPS, Auto Minify, Bot Fight Mode</li>
+      <li>🟦📄 Gemini Free → Docs drafting, Gmail assistance, Meet summaries</li>
+      <li>🟩⚙️ Google AI Studio Free → Prompt experiments, governance scroll prototyping</li>
+    </ul>
+    <p style="color:gold; margin-top:15px;">
+      These survival rituals mark your resilience phase — documenting how HlaleleDAO runs lean under constraints.
+    </p>
+  </div>
+</body>
+</html>
