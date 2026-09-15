@@ -1,0 +1,6 @@
+# From your repo folder:
+echo ".git" > .assetsignore
+
+git add .assetsignore
+git commit -m "Add .assetsignore to exclude .git from deploy"
+git push origin main
