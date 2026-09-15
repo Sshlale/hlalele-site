@@ -1,1 +1,12 @@
-git clone https://x:art_v2_x_5ae9dad10c7f07f4ac6207f129536dbcb8a72ce5@31b91e7f9954ad8aa334d46f012bd8ed.artifacts.cloudflare.net/git/lee-production/lee-polished-wood-app-5647e4c8.git polished-wood-app
+<!-- Survival Ritual Panel -->
+<div class="upgrade-panel">
+  <h3>🌱 Survival Rituals (Free Tier)</h3>
+  <ul>
+    <li>🟧🔒 Cloudflare Free → Page Rules, HTTPS, Auto Minify, Bot Fight Mode</li>
+    <li>🟦📄 Gemini Free → Docs drafting, Gmail assistance, Meet summaries</li>
+    <li>🟩⚙️ Google AI Studio Free → Prompt experiments, governance scroll prototyping</li>
+  </ul>
+  <p style="color:gold; margin-top:15px;">
+    These survival rituals mark your resilience phase — documenting how HlaleleDAO runs lean under constraints.
+  </p>
+</div>
