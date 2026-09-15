@@ -1,74 +1,78 @@
-@keyframes pulseGlow {
-  0% { box-shadow: 0 0 12px gold, 0 0 20px green; }
-  50% { box-shadow: 0 0 25px gold, 0 0 40px green; transform: scale(1.08); }
-  100% { box-shadow: 0 0 12px gold, 0 0 20px green; transform: scale(1); }
-}
-
-.export-btn {
-  margin-top: 20px;
-  padding: 12px 20px;
-  font-size: 1.1em;
-  font-weight: bold;
-  background: linear-gradient(135deg, green 40%, gold 100%);
-  color: indigo;
-  border: 3px solid gold;
-  border-radius: 12px;
-  cursor: pointer;
-  animation: pulseGlow 2s infinite;
-  transition: transform 0.2s ease, box-shadow 0.3s ease;
-}
-<button onclick="exportArchive()" class="export-btn">
-  🔥📜 Export Eternal Archive
-</button>
 <script>
-  // Initialize archive in localStorage if not present
-  if(!localStorage.getItem("ritualArchive")){
-    localStorage.setItem("ritualArchive", JSON.stringify({
-      board: "HlaleleDAO Sandbox Ritual Board",
-      logs: []
-    }));
+  function renderWitnessLog() {
+    let archive = JSON.parse(localStorage.getItem("ritualArchive"));
+    let logList = document.getElementById("witness-log");
+    logList.innerHTML = "";
+
+    archive.logs.forEach(entry => {
+      let li = document.createElement("li");
+      li.textContent = `${entry.timestamp} → ${entry.title || entry.id} [${entry.status}] ${entry.message ? " - " + entry.message : ""}`;
+      logList.appendChild(li);
+    });
   }
 
+  // Call render after each update
   function updateRitual(id, status) {
     let archive = JSON.parse(localStorage.getItem("ritualArchive"));
-    let entry = {
-      id: id,
-      status: status,
-      timestamp: new Date().toISOString()
-    };
+    let entry = { id:id, status:status, title:id, timestamp:new Date().toISOString() };
     archive.logs.push(entry);
     localStorage.setItem("ritualArchive", JSON.stringify(archive));
-    console.log("Archive Updated:", archive);
+    renderWitnessLog();
   }
 
-  // Export function with ceremonial log
   function exportArchive() {
     let archive = JSON.parse(localStorage.getItem("ritualArchive"));
-
-    // Add ceremonial invocation entry
     archive.logs.push({
-      id: "eternal_export",
-      status: "invoked",
-      message: "🔥 Eternal Archive invoked",
-      timestamp: new Date().toISOString()
+      id:"eternal_export",
+      status:"invoked",
+      message:"🔥 Eternal Archive invoked",
+      timestamp:new Date().toISOString()
     });
-
-    // Save back to localStorage
     localStorage.setItem("ritualArchive", JSON.stringify(archive));
+    renderWitnessLog();
 
-    // Trigger download
     const blob = new Blob([JSON.stringify(archive,null,2)], {type:"application/json"});
     const link = document.createElement("a");
     link.href = URL.createObjectURL(blob);
     link.download = "eternal-ritual-archive.json";
     link.click();
-
-    console.log("Eternal Archive Exported:", archive);
   }
+
+  // Render logs on page load
+  window.onload = renderWitnessLog;
 </script>
-{
-  "id": "eternal_export",
-  "status": "invoked",
-  "message": "🔥 Eternal Archive invoked",
-  "timestamp": "2026-09-15T05:53:00Z"
+#witness-log li {
+  margin: 8px 0;
+  padding: 6px;
+  border-radius: 6px;
+  font-size: 0.95em;
+}
+
+.witness-complete {
+  color: #00ff7f; /* emerald green */
+  text-shadow: 0 0 6px #00ff7f;
+}
+
+.witness-export {
+  color: gold;
+  text-shadow: 0 0 8px gold;
+}
+function renderWitnessLog() {
+  let archive = JSON.parse(localStorage.getItem("ritualArchive"));
+  let logList = document.getElementById("witness-log");
+  logList.innerHTML = "";
+
+  archive.logs.forEach(entry => {
+    let li = document.createElement("li");
+
+    // Style based on type
+    if(entry.id === "eternal_export") {
+      li.className = "witness-export";
+    } else if(entry.status === "complete") {
+      li.className = "witness-complete";
+    }
+
+    li.textContent = `${entry.timestamp} → ${entry.title || entry.id} [${entry.status}] ${entry.message ? " - " + entry.message : ""}`;
+    logList.appendChild(li);
+  });
 }
