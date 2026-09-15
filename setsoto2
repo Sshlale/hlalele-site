@@ -83,3 +83,43 @@
       {id:"vercel_preview",status:"pending",title:"Vercel → Preview Ritual"},
       {id:"cloudflare_dns",status:"pending",title:"Cloudflare → DNS Ritual"},
       {id:"dns_propagation",status:"pending",title
+<script>
+  // Initialize archive in localStorage
+  if(!localStorage.getItem("ritualArchive")){
+    localStorage.setItem("ritualArchive", JSON.stringify({
+      board: "HlaleleDAO Sandbox Ritual Board",
+      logs: []
+    }));
+  }
+
+  function updateRitual(id, status) {
+    // Load archive
+    let archive = JSON.parse(localStorage.getItem("ritualArchive"));
+
+    // Create log entry
+    let entry = {
+      id: id,
+      status: status,
+      timestamp: new Date().toISOString()
+    };
+
+    // Push entry into logs
+    archive.logs.push(entry);
+
+    // Save back to localStorage
+    localStorage.setItem("ritualArchive", JSON.stringify(archive));
+
+    console.log("Archive Updated:", archive);
+  }
+
+  // Function to export full archive when you want
+  function exportArchive() {
+    let archive = localStorage.getItem("ritualArchive");
+    const blob = new Blob([archive], {type:"application/json"});
+    const link = document.createElement("a");
+    link.href = URL.createObjectURL(blob);
+    link.download = "eternal-ritual-archive.json";
+    link.click();
+  }
+</script>
+
