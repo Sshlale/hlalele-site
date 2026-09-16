@@ -1,10 +1,19 @@
-<nav style="text-align:center; margin-bottom:20px;">
-  <a href="#mission">Mission</a> |
-  <a href="#governance">Governance</a> |
-  <a href="#sponsors">Sponsors</a>
-</nav>
+<section id="mission">
+  <h2>🎯 Mission</h2>
+  <p>To encode sovereignty and design governance systems for African founders and stewards...</p>
+</section>
 
-<!-- Example sections -->
-<section id="mission">🎯 Mission content here...</section>
-<section id="governance">⚙️ Governance content here...</section>
-<section id="sponsors">🌟 Sponsors Codex here...</section>
+<section id="governance">
+  <h2>⚙️ Governance</h2>
+  <p>HlaleleDAO blends intelligence, onboarding, and compliance into ceremonial protocols...</p>
+</section>
+
+<section id="archive">
+  <h2>📜 Archive Scrolls</h2>
+  <p>Witness scrolls and ceremonial dispatches are preserved as living testimony...</p>
+</section>
+
+<section id="sponsors">
+  <h2>🌟 Sponsors Codex</h2>
+  <!-- Paste your Sponsors Page scroll here -->
+</section>
