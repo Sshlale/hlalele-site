@@ -1,24 +1,9 @@
-# 🌍 HlaleleDAO  
-### Sovereignty & Governance Systems for African Founders  
-
 ---
 
-![Aura](https://img.shields.io/badge/━━━-✨-gold?style=flat)
-[![Sponsor](https://img.shields.io/badge/Sponsor-🔥-gold)](https://github.com/sponsors/Sshlale)
-![Aura](https://img.shields.io/badge/━━━-✨-gold?style=flat)
+✨━━━ Sovereign Glyph Divider ━━━✨
 
 ---
-
-🎯 **Mission**  
-To encode sovereignty and design governance systems for African founders and stewards.  
-
-⚙️ **Governance**  
-HlaleleDAO blends intelligence, onboarding, and compliance into ceremonial protocols.  
-
-📜 **Archive Scrolls**  
-Witness scrolls and ceremonial dispatches are preserved as living testimony.  
-
----
-
-© 2026 HlaleleDAO. All rights reserved.  
-*Building sovereignty systems with integrity and purpose.*  
+<p align="center">
+🌍 Building sovereignty systems with integrity and purpose 🌍
+</p>
+> 💚 Support HlaleleDAO’s journey: [Sponsor here](https://github.com/sponsors/Sshlale)
