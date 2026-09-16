@@ -1,19 +1,34 @@
-<section id="mission">
-  <h2>🎯 Mission</h2>
-  <p>To encode sovereignty and design governance systems for African founders and stewards...</p>
-</section>
+<nav class="ceremonial-nav">
+  <a href="#mission">🎯 Mission</a>
+  <span class="divider">✨</span>
+  <a href="#governance">⚙️ Governance</a>
+  <span class="divider">✨</span>
+  <a href="#archive">📜 Archive Scrolls</a>
+  <span class="divider">✨</span>
+  <a href="#sponsors">🌟 Sponsors</a>
+</nav>
 
-<section id="governance">
-  <h2>⚙️ Governance</h2>
-  <p>HlaleleDAO blends intelligence, onboarding, and compliance into ceremonial protocols...</p>
-</section>
-
-<section id="archive">
-  <h2>📜 Archive Scrolls</h2>
-  <p>Witness scrolls and ceremonial dispatches are preserved as living testimony...</p>
-</section>
-
-<section id="sponsors">
-  <h2>🌟 Sponsors Codex</h2>
-  <!-- Paste your Sponsors Page scroll here -->
-</section>
+<style>
+.ceremonial-nav {
+  text-align: center;
+  background: linear-gradient(to right, gold, orange);
+  padding: 12px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+.ceremonial-nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  transition: text-shadow 0.3s, color 0.3s;
+}
+.ceremonial-nav a:hover {
+  color: #fffacd;
+  text-shadow: 0 0 8px gold;
+}
+.ceremonial-nav .divider {
+  color: white;
+  margin: 0 5px;
+}
+</style>
