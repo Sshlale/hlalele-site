@@ -32,3 +32,19 @@ html {
   margin: 0 5px;
 }
 </style>
+<div class="glyph-divider">✨━━━ Sovereign Glyph Divider ━━━✨</div>
+
+<style>
+.glyph-divider {
+  text-align: center;
+  font-size: 1.3em;
+  color: gold;
+  margin: 30px 0;
+  animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+  from { text-shadow: 0 0 5px gold; }
+  to { text-shadow: 0 0 15px orange; }
+}
+</style>
