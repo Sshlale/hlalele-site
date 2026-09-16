@@ -5,15 +5,21 @@
 
   <!-- Social Glyphs -->
   <div class="social-glyphs">
-    <a href="https://github.com/Sshlale" target="_blank" title="GitHub">
-      🐙 GitHub
-    </a>
-    <a href="https://twitter.com/hlaleleSet98" target="_blank" title="Twitter">
-      🐦 Twitter
-    </a>
-    <a href="https://instagram.com/setsotostefans" target="_blank" title="Instagram">
-      📸 Instagram
-    </a>
+    <a href="https://github.com/Sshlale" target="_blank" title="GitHub">🐙 GitHub</a>
+    <a href="https://twitter.com/hlaleleSet98" target="_blank" title="Twitter">🐦 Twitter</a>
+    <a href="https://instagram.com/setsotostefans" target="_blank" title="Instagram">📸 Instagram</a>
+  </div>
+
+  <!-- Newsletter Glyph -->
+  <div class="newsletter-glyph">
+    <p>📜 Subscribe to the Dispatch Ring</p>
+    <form action="#" method="post">
+      <input type="email" name="email" placeholder="Enter your email" required
+             style="padding:8px; border:2px solid gold; border-radius:6px;">
+      <button type="submit" style="padding:8px 12px; background:gold; border:none; border-radius:6px; font-weight:bold;">
+        ✨ Inscribe
+      </button>
+    </form>
   </div>
 </footer>
 
@@ -48,6 +54,9 @@
 .social-glyphs a:hover {
   color: #fffacd;
   text-shadow: 0 0 8px gold;
+}
+.newsletter-glyph {
+  margin-top: 20px;
 }
 @keyframes glow {
   from { text-shadow: 0 0 5px gold; }
