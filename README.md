@@ -1,13 +1,4 @@
-export default {
-  async fetch(request, env) {
-    if (request.method === "POST") {
-      const formData = await request.formData();
-      const email = formData.get("email");
-      if (email) {
-        await env.NEWSLETTER.put(email, "subscribed");
-        return new Response("✨ Inscribed successfully!", { status: 200 });
-      }
-    }
-    return new Response("Invalid request", { status: 400 });
-  }
-};
+<form action="https://stefans.hlalelesetsotostefans.workers.dev/newsletter" method="post">
+  <input type="email" name="email" placeholder="Enter your email" required>
+  <button type="submit">✨ Inscribe</button>
+</form>
