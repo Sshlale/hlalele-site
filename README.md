@@ -1,53 +1,26 @@
-<div style="background:#fff8e1; font-family:Arial, sans-serif; padding:50px; border:4px solid gold; border-radius:16px; max-width:800px; margin:auto;">
+<div style="background:#fff8e1; font-family:Arial, sans-serif; padding:30px; border:3px solid gold; border-radius:12px; max-width:600px; margin:auto;">
   
-  <!-- Dramatic Glyph Banner -->
-  <div style="text-align:center; background:linear-gradient(to right, gold, orange); padding:20px; border-radius:12px;">
-    <h1 style="color:white; text-shadow:0 0 15px #ffcc00; font-size:2em;">
-      🌟 Sovereign Summit Announcement 🌟
-    </h1>
-    <p style="color:#fffacd; font-style:italic; font-size:1.1em;">
-      ✨ A new codex is ready to be unveiled ✨
-    </p>
-  </div>
-  
-  <hr style="border:2px solid gold; width:70%; margin:30px auto;">
+  <!-- Glyph Banner -->
+  <h1 style="text-align:center; color:gold; text-shadow:0 0 12px orange; font-size:1.6em;">
+    ✨ Urgent Dispatch ✨
+  </h1>
   
   <!-- Announcement Body -->
-  <h2 style="color:#333; text-align:center;">📜 Witness Codex Release</h2>
-  <p style="text-align:center; font-size:1.2em; color:#555;">
-    HlaleleDAO invites you to witness the unveiling of the <strong>[Codex Name / Summit Title]</strong>.  
-    This dispatch marks a new chapter in sovereign governance and archive testimony.
+  <p style="text-align:center; font-size:1.1em; color:#444; margin:20px 0;">
+    HlaleleDAO announces <strong>[Codex / Summit]</strong>.  
+    Join the ceremony and witness the unveiling.
   </p>
   
-  <!-- Highlighted Call-to-Action -->
-  <div style="text-align:center; margin:30px;">
+  <!-- Call-to-Action -->
+  <div style="text-align:center; margin:20px;">
     <a href="https://stefans.hlalelesetsotostefans.workers.dev" target="_blank"
-       style="padding:16px 28px; background:gold; border-radius:10px; color:white; font-weight:bold; font-size:1.2em; text-decoration:none; text-shadow:0 0 12px orange;">
-      ✨ Join the Ceremony ✨
+       style="padding:14px 24px; background:gold; border-radius:8px; color:white; font-weight:bold; font-size:1.1em; text-decoration:none; text-shadow:0 0 10px orange;">
+      ✨ Enter the Ceremony ✨
     </a>
   </div>
   
-  <hr style="border:2px solid gold; width:70%; margin:30px auto;">
-  
-  <!-- Sponsors Codex -->
-  <h2 style="color:#333; text-align:center;">🌟 Sponsors Codex</h2>
-  <p style="text-align:center; color:#555;">
-    Eternal gratitude to our sovereign supporters who ignite the flame of HlaleleDAO:
-  </p>
-  <ul style="list-style:none; padding:0; text-align:center; color:#555;">
-    <li>🟩🌱 Resilience Supporter</li>
-    <li>🟦⚔️ Governance Ally</li>
-    <li>🟧🔥 DAO Patron</li>
-    <li>🟪✨ Eternal Archive Benefactor</li>
-  </ul>
-  
-  <hr style="border:2px solid gold; width:70%; margin:30px auto;">
-  
   <!-- Footer Seal -->
-  <p style="text-align:center; font-size:0.9em; color:#666;">
+  <p style="text-align:center; font-size:0.9em; color:#666; margin-top:30px;">
     ✨ Eternal Archive Seal — © 2026 HlaleleDAO ✨
-  </p>
-  <p style="text-align:center; font-size:0.9em; color:#666;">
-    Connect: 🐙 <a href="https://github.com/Sshlale" target="_blank" style="color:gold;">GitHub</a> | 🐦 <a href="https://twitter.com/hlaleleSet98" target="_blank" style="color:gold;">Twitter</a> | 📸 <a href="https://instagram.com/setsotostefans" target="_blank" style="color:gold;">Instagram</a>
   </p>
 </div>
