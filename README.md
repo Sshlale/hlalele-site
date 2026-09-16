@@ -3,9 +3,9 @@
 
 ---
 
+![Aura](https://img.shields.io/badge/━━━-✨-gold?style=flat)
 [![Sponsor](https://img.shields.io/badge/Sponsor-🔥-gold)](https://github.com/sponsors/Sshlale)
-[![Build Status](https://img.shields.io/badge/Build-Passing-emeraldgreen)](#)
-[![License](https://img.shields.io/badge/License-MIT-blue)](#)
+![Aura](https://img.shields.io/badge/━━━-✨-gold?style=flat)
 
 ---
 
