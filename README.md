@@ -1,24 +1,27 @@
-#!/bin/bash
+name: Enforce Ceremonial Commit Style
 
-# Prompt contributor for glyph prefix
-echo "🌟 HlaleleDAO Commit Ritual 🌟"
-echo "Choose a glyph prefix for this commit:"
-echo "1) 🌿 [Parchment Rhythm]"
-echo "2) 🔮 [Prestige Dispatch]"
-echo "3) 📜 [Scroll Update]"
-echo "4) ✨ [Ceremonial Seal]"
-echo "5) 🕊️ [Sovereign Archive]"
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
 
-read -p "Enter number: " choice
+jobs:
+  check-commits:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
 
-case $choice in
-  1) prefix="🌿 [Parchment Rhythm]" ;;
-  2) prefix="🔮 [Prestige Dispatch]" ;;
-  3) prefix="📜 [Scroll Update]" ;;
-  4) prefix="✨ [Ceremonial Seal]" ;;
-  5) prefix="🕊️ [Sovereign Archive]" ;;
-  *) prefix="🌿 [Parchment Rhythm]" ;; # default
-esac
-
-# Prepend prefix to commit message
-sed -i "1s/^/$prefix /" "$1"
+      - name: Verify commit messages
+        run: |
+          echo "🔍 Checking commit messages for glyph prefixes..."
+          invalid=$(git log origin/main..HEAD --pretty=format:"%s" | grep -vE "^(🌿|🔮|📜|✨|🕊️)")
+          if [ -n "$invalid" ]; then
+            echo "❌ Invalid commit messages found:"
+            echo "$invalid"
+            echo "Commit messages must start with one of: 🌿 🔮 📜 ✨ 🕊️"
+            exit 1
+          else
+            echo "✅ All commit messages follow ceremonial style."
+          fi
