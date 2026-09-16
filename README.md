@@ -1,27 +1,23 @@
-name: Enforce Ceremonial Commit Style
+# 🌟 HlaleleDAO Ceremonial Pull Request
 
-on:
-  pull_request:
-    types: [opened, synchronize, reopened]
+## 🔮 Rhythm Declaration
+- [ ] 🌿 Parchment Rhythm — Weekly cadence, sponsor gratitude, everyday testimony
+- [ ] 🔮 Prestige Dispatch — Rare ceremonies, codex unveilings, milestones
+- [ ] 📜 Scroll Update — Documentation, README, guides
+- [ ] ✨ Ceremonial Seal — Footer glyphs, archive confirmations
+- [ ] 🕊️ Sovereign Archive — Eternal Archive indexing, milestone preservation
 
-jobs:
-  check-commits:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
-        with:
-          fetch-depth: 0
+## 📜 Summary
+Describe the sovereign act this PR performs:
+- What scroll, glyph, or dispatch is being updated?
+- Which cadence does it align with?
 
-      - name: Verify commit messages
-        run: |
-          echo "🔍 Checking commit messages for glyph prefixes..."
-          invalid=$(git log origin/main..HEAD --pretty=format:"%s" | grep -vE "^(🌿|🔮|📜|✨|🕊️)")
-          if [ -n "$invalid" ]; then
-            echo "❌ Invalid commit messages found:"
-            echo "$invalid"
-            echo "Commit messages must start with one of: 🌿 🔮 📜 ✨ 🕊️"
-            exit 1
-          else
-            echo "✅ All commit messages follow ceremonial style."
-          fi
+## ✨ Validation
+- [ ] Commit messages follow glyph prefix style
+- [ ] README badges reflect current rhythm
+- [ ] Wheel/Bar visuals remain consistent across desktop/mobile
+
+## 🕊️ Archive Note
+Explain how this PR contributes to the Eternal Archive:
+- Does it mark a milestone?
+- Does it seal a ceremony?
