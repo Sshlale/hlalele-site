@@ -64,6 +64,40 @@
       color: #FDFEFE;
       line-height: 1.8;
     }
+
+    .sponsor-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 20px;
+    }
+
+    .sponsor-button,
+    .amount-button {
+      display: inline-block;
+      background: #F1C40F;
+      color: #1C0F2E;
+      text-decoration: none;
+      font-weight: 700;
+      border-radius: 999px;
+      transition: transform 0.2s ease, opacity 0.2s ease;
+    }
+
+    .sponsor-button {
+      padding: 12px 22px;
+      font-size: 1rem;
+    }
+
+    .amount-button {
+      padding: 10px 18px;
+      font-size: 0.95rem;
+    }
+
+    .sponsor-button:hover,
+    .amount-button:hover {
+      opacity: 0.9;
+      transform: translateY(-1px);
+    }
     
     footer {
       text-align: center;
@@ -103,12 +137,23 @@
 
     <section>
       <h2>⚙️ Governance</h2>
-      <p>HlaleleDAO blends intelligence, onboarding, and compliance into ceremonial protocols. Our approach combines traditional wisdom with modern governance frameworks to create systems that work for our communities.</p>
+      <p>HlaleleDAO blends intelligence, onboarding, and compliance into ceremonial protocols. Our approach combines traditional wisdom with modern governance frameworks to create systems that work in the real world.</p>
     </section>
 
     <section>
       <h2>📜 Archive Scrolls</h2>
-      <p>Witness scrolls and ceremonial dispatches are preserved as living testimony. We document our journey, decisions, and evolution to create an immutable record of our collective progress and learning.</p>
+      <p>Witness scrolls and ceremonial dispatches are preserved as living testimony. We document our journey, decisions, and evolution to create an immutable record of our collective progress and stewardship.</p>
+    </section>
+
+    <section>
+      <h2>💛 Sponsor My Work</h2>
+      <p>Your support helps fund the continued development of HlaleleDAO, research, governance experiments, and the building of systems that protect sovereignty and community power.</p>
+      <div class="sponsor-actions">
+        <a class="sponsor-button" href="https://example.com/donate">Support My Work</a>
+        <a class="amount-button" href="https://example.com/donate?amount=25">$25</a>
+        <a class="amount-button" href="https://example.com/donate?amount=50">$50</a>
+        <a class="amount-button" href="https://example.com/donate?amount=100">$100</a>
+      </div>
     </section>
   </main>
   
