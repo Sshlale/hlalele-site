@@ -1,0 +1,13 @@
+{
+  "name": "hlalele-site",
+  "version": "1.0.0",
+  "description": "Hlalele static site",
+  "private": true,
+  "scripts": {
+    "dev": "npx serve .",
+    "build": "echo 'No build step needed for static HTML'"
+  },
+  "dependencies": {
+    "@vercel/analytics": "^1.4.1"
+  }
+}
